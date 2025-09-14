@@ -1,0 +1,318 @@
+/* 기본 스타일 */
+body { 
+  font-family: 'Inter', sans-serif; 
+  background-color: #f8f9fa; 
+  color: #1D1C1C; 
+}
+
+/* 다크모드 */
+body.dark-mode {
+  background-color: #1D1C1C;
+  color: #f8f9fa;
+}
+
+/* 사이드바 */
+.sidebar { 
+  background-color: #fff; 
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 0 15px rgba(0,0,0,0.05); 
+}
+body.dark-mode .sidebar {
+  background-color: #2a2a2a;
+}
+
+/* 제목 */
+h2 { 
+  border-bottom: 3px solid #1D1C1C; 
+  display: inline-block; 
+  padding-bottom: 5px; 
+  margin-bottom: 15px; 
+}
+body.dark-mode h2 {
+  border-bottom: 3px solid #f8f9fa;
+}
+
+/* 카드 */
+.card { margin-bottom: 20px; }
+body.dark-mode .card { 
+  background-color: #2a2a2a; 
+  color: #f8f9fa; 
+}
+
+/* 버튼 */
+.btn-custom { 
+  background-color: #1D1C1C; 
+  color: #fff; 
+  border: none; 
+}
+.btn-custom:hover { 
+  background-color: #333; 
+  color: #fff; 
+}
+
+/* 다크모드 버튼 */
+body.dark-mode .btn-custom {
+  background-color: #f8f9fa;
+  color: #1D1C1C;
+}
+body.dark-mode .btn-custom:hover {
+  background-color: #ddd;
+  color: #1D1C1C;
+}
+
+/* === 다크모드: 테이블 강제 오버라이드 === */
+body.dark-mode .table {
+  color: #f8f9fa !important;
+  background-color: transparent !important;
+}
+
+/* 테이블 헤더가 table-light일 때도 덮어쓰기 */
+body.dark-mode thead.table-light,
+body.dark-mode .table thead {
+  background-color: #2f2f2f !important;
+  color: #f8f9fa !important;
+}
+
+/* 헤더 셀 */
+body.dark-mode .table thead th,
+body.dark-mode thead.table-light th {
+  color: #f8f9fa !important;
+  border-color: #444 !important;
+}
+
+/* 바디 셀 */
+body.dark-mode .table tbody td {
+  background-color: transparent !important;
+  color: #e8e8e8 !important;
+  border-color: #444 !important;
+}
+
+/* 테이블 테두리 전체 */
+body.dark-mode .table-bordered {
+  border: 1px solid #444 !important;
+}
+
+/* table-striped일 경우 행 배경 오버라이드 */
+body.dark-mode .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: rgba(255,255,255,0.02) !important;
+}
+
+/* 카드 내부 테이블 간격/배경 보정 */
+body.dark-mode .card .table {
+  background-color: transparent !important;
+}
+
+/* 만약 그래도 안되면 더 높은 특이성으로 강제 */
+body.dark-mode .card .table.table-bordered thead.table-light th {
+  background-color: #2f2f2f !important;
+  color: #f8f9fa !important;
+  border-color: #444 !important;
+}
+
+/* 모달 다크모드 스타일 */
+body.dark-mode .modal-content {
+  background-color: #2a2a2a !important;
+  color: #f8f9fa !important;
+}
+
+body.dark-mode .modal-header {
+  background-color: #2a2a2a !important;
+  color: #f8f9fa !important;
+  border-bottom: 1px solid #444 !important;
+}
+
+body.dark-mode .modal-body {
+  background-color: #2a2a2a !important;
+  color: #f8f9fa !important;
+}
+
+body.dark-mode .modal-footer {
+  background-color: #2a2a2a !important;
+  border-top: 1px solid #444 !important;
+}
+
+body.dark-mode .modal-title {
+  color: #f8f9fa !important;
+}
+
+/* 모달 내부 텍스트 요소들 */
+body.dark-mode .modal-body p,
+body.dark-mode .modal-body h4,
+body.dark-mode .modal-body h5,
+body.dark-mode .modal-body ul,
+body.dark-mode .modal-body li,
+body.dark-mode .modal-body strong {
+  color: #f8f9fa !important;
+}
+
+/* 모달 닫기 버튼 */
+body.dark-mode .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* 다크모드에서 이미지 색상 반전 */
+body.dark-mode .contact-image-light {
+  display: none;
+}
+
+body.dark-mode .contact-image-dark {
+  filter: invert(1);
+}
+
+body:not(.dark-mode) .contact-image-dark {
+  display: none;
+}
+
+/* 다크모드 이미지 처리 */
+body.dark-mode .contact-image-light {
+  display: none;
+}
+
+body.dark-mode .contact-image-dark {
+  display: block;         /* 안 하면 모바일에서 안 보일 수 있음 */
+  width: 100%;            /* 부모 컨테이너 폭에 맞춰 늘어나게 */
+  max-width: 1200px;       /* 최대 폭 지정 */
+  height: auto;           /* 비율 유지 */
+  filter: invert(1);
+}
+
+body:not(.dark-mode) .contact-image-dark {
+  display: none;
+}
+
+/* 모바일 전용 조정 */
+@media (max-width: 768px) {
+  body.dark-mode .contact-image-dark {
+    max-width: 100%;      /* 모바일에서는 화면 폭 꽉 차게 */
+  }
+  .contact-image-light {
+    max-width: 100%;      /* light 이미지도 동일 */
+  }
+}
+
+/* 다크모드 토글 버튼 */
+#darkModeToggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #1D1C1C;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+#darkModeToggle::after {
+  content: "🌙";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+body.dark-mode #darkModeToggle {
+  background-color: #f8f9fa;
+}
+body.dark-mode #darkModeToggle::after {
+  left: 33px;
+  background-color: #1D1C1C;
+  content: "☀️";
+}
+
+/* 기술 아이콘 */
+.tech-icon { 
+  margin-right: 8px; 
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+/* 기술 스택 색상 */
+.html { color: #E34F26; }
+.css { color: #1572B6; }
+.js { color: #F7DF1E; }
+.react { color: #61DAFB; }
+.node { color: #339933; }
+.db { color: #4479A1; }
+.aws { color: #FF9900; }
+.python { color: #3776AB; }
+.php { color: #777BB4; }
+.wordpress { color: #21759B; }
+.bootstrap { color: #d83bd0; }
+
+/* 기술 스택 그리드 */
+.skills-grid {
+  display: block;
+  gap: 15px;
+}
+
+/* 각 카테고리 */
+.skill-category {
+  margin-bottom: 15px;
+}
+
+/* 소제목 왼쪽 정렬 */
+.skill-category h6 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* 리스트 왼쪽 정렬 */
+.skill-category ul {
+  text-align: left;
+  padding-left: 0;
+  list-style: none;
+}
+
+.skill-category ul li {
+  margin-bottom: 5px;
+}
+
+/* 다크모드 제목 */
+body.dark-mode .skill-category h6 {
+  color: #f8f9fa;
+}
+
+/* 이미지 아이콘 크기 통일 */
+.skill-category li img {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .sidebar { margin-bottom: 20px; }
+}
+
+/*프로필 이미지 */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;       
+  object-position: top;    
+  border-radius: 50%;
+  border: 3px solid #ccc;
+}
+
+
+/* btn-custom 기본 색상 */
+.btn-custom {
+  background-color: #222326; /* 기본 배경 */
+  color: #fff;               /* 글자 색상 */
+  border: 1px solid #222326; /* 테두리 */
+  transition: background-color 0.2s, border-color 0.2s; /* 부드러운 전환 */
+}
+
+/* btn-custom 호버 시 색상 진하게 */
+.btn-custom:hover {
+  background-color: #111113; /* 호버 시 더 어둡게 */
+  border-color: #111113;
+  color: #fff;
+}

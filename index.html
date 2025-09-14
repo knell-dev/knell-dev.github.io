@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>이력서 - 박준용</title>
+  <!-- 부트스트랩 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container py-5">
+  <div class="d-flex justify-content-end mb-3">
+    <button id="darkModeToggle"></button>
+  </div>
+  <div class="row">
+    <!-- 좌측 사이드바 -->
+    <div class="col-md-4">
+      <div class="sidebar text-center">
+        <img src="images/증명사진.jpg" alt="Profile" class="profile-img">
+        <h3>박준용</h3>
+        <p>Fullstack Developer</p>
+        <h5>Skills</h5>
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-category">
+            <h6>Frontend</h6>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fab fa-html5 tech-icon html"></i> HTML |
+                <i class="fab fa-css3-alt tech-icon css"></i>CSS |
+                <i class="fab fa-js tech-icon js"></i> JavaScript (ES6)
+              </li>
+              <li><i class="fab fa-react tech-icon react"></i> React.js</li>
+              <li>
+                <img src="images/next.js.png" alt="Next.js" width="40" style="vertical-align: middle;"> Next.js
+              </li>
+              <li>
+                <img src="images/jquery.png" alt="jQuery" width="40" style="vertical-align: middle;"> jQuery
+              </li>
+              <li><i class="fab fa-bootstrap tech-icon bootstrap"></i> Bootstrap</li>
+
+            </ul>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-category">
+            <h6>Backend</h6>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fab fa-node tech-icon node"></i> Node.js |
+                <img src="images/express.js.png" alt="Express.js" width="40" style="vertical-align: middle;"> Express.js
+              </li>
+
+              <li>
+                <i class="fab fa-php tech-icon php"></i> PHP |
+                <img src="images/codeigniter.png" alt="CodeIgniter" width="17" style="vertical-align: middle;"> CodeIgniter
+              </li>
+
+              <li><i class="fab fa-python tech-icon python"></i> Python</li>
+            </ul>
+          </div>
+
+          <!-- Database -->
+          <div class="skill-category">
+            <h6>Database</h6>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-database tech-icon db" style="font-size: 20px;"></i> MySQL |
+                <img src="images/mongodb.png" alt="MongoDB" width="20" style="vertical-align: middle;"> MongoDB |
+                <img src="images/mariadb.png" alt="MariaDB" width="20" style="vertical-align: middle;"> MariaDB
+              </li>
+            </ul>
+          </div>
+
+          <!-- DevOps -->
+          <div class="skill-category">
+            <h6>DevOps</h6>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fab fa-linux tech-icon linux" style="font-size: 20px;"></i> Linux |
+                <img src="images/aws_ec2.png" alt="AWS EC2" width="20" style="vertical-align: middle;"> AWS EC2
+              </li>
+            </ul>
+          </div>
+
+          <!-- CMS -->
+          <div class="skill-category">
+            <h6>CMS</h6>
+            <ul class="list-unstyled">
+              <li><i class="fab fa-wordpress tech-icon wordpress"></i> WordPress</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 우측 메인 -->
+    <div class="col-md-8">
+      <!-- About Me -->
+      <div class="card p-3">
+        <h2>소개</h2>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <img src="images/증명사진.jpg" alt="Profile" class="profile-img">
+        </div>
+        <p style="text-align: center; font-weight: bold; margin-top: 15px;">
+          풀스택 개발자 박준용 입니다.
+        </p>
+        <p>
+          개발 경험 2년 주니어 개발자로, Node.js와 Express를 중심으로 한 웹 서비스 개발 경험을 보유하고 있습니다. 
+          React와 Next.js를 활용한 모던 프론트엔드 구현뿐만 아니라, Electron과 PySide를 활용한 데스크탑 GUI 애플리케이션 개발 경험도 있습니다. 
+          또한 WordPress 기반 웹사이트 제작과 MySQL, MongoDB, MariaDB를 활용한 데이터 관리 역량을 갖추고 있어 기획부터 배포까지 프로젝트 전 과정을 수행할 수 있습니다. 
+          문제 해결과 빠른 학습 능력을 바탕으로 팀 협업과 성과 창출에 강점을 가지며, 새로운 기술 도입과 최적화에도 적극적으로 참여합니다.
+        </p>
+      </div>
+
+
+      <div class="card p-3 mb-3">
+        <h2>개인정보</h2>
+        <img src="images/개인정보.png" alt="X" class="contact-image-light img-fluid" style="max-width: 1200px; height: auto;">
+        <img src="images/개인정보-dark.png" alt="X" class="contact-image-dark img-fluid" style="max-width: 1200px; height: auto;">
+      </div>
+
+      <!-- Projects -->
+      <div class="card p-3">
+        <h2>프로젝트</h2>
+
+        <!-- 3개 기본 표시 -->
+        <div class="project-list">
+          <!-- LMS 온라인강의 사이트 -->
+          <div class="card p-3 mb-3">
+            <h5>LMS 온라인강의 사이트</h5>
+            <ul>
+              <li>WordPress 기반 LMS 플랫폼</li>
+              <li>수강생 진도 추적, 결제시스템, 구매자 전용 프로그램 접근 검증 구현</li>
+              <li>MySQL/MariaDB로 수강 기록·결제 정보 관리</li>
+              <li>사용자 친화적 UI/UX 제공</li>
+              <li>캐싱 처리로 PageSpeedInsights 성능 및 SEO 최적화 (Performance 48% 개선: 65 → 96, LCP 49% 단축: 3.5s → 1.8s, CLS 99% 개선: 0.18 → 0.001)</li>
+              <img src="images/개선전.png" alt="PageSpeed 성능 개선" class="img-fluid my-2">
+            </ul>
+            <a href="https://heavencoding.com/" target="_blank" class="btn btn-sm btn-custom mb-2">웹사이트 보러가기</a>
+
+            <!-- 상세보기 버튼 -->
+            <button type="button" class="btn btn-sm btn-custom" data-bs-toggle="modal" data-bs-target="#lmsModal">
+              상세보기
+            </button>
+            
+            <!-- 모달창 -->
+            <div class="modal fade" id="lmsModal" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">LMS 온라인강의 사이트</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- 사용 기술 -->
+                    <p><strong>사용 기술:</strong> WordPress, PHP, MySQL, JavaScript, jQuery, bootstrap, EC2</p>
+
+                    <!-- 소제목 -->
+                    <h4>수강 진도 자동 추적 구현</h4>
+
+                    <!-- 문제 상황과 해결 -->
+                    <p><strong>문제 상황 :</strong> 사용자가 강의를 직접 완료해야만 수강 완료로 처리되어, 실제 학습 여부와 진도 추적이 불가능 했습니다.</p>
+                    <p><strong>해결 방법 :</strong> 사용자가 강의 페이지에 접속하면 PHP 백엔드에서 수강 상태를 '진행 중'으로 자동 기록하고, JavaScript와 AJAX를 사용해 클라이언트 측에서 학습 시간을 실시간 수집하여 MySQL/MariaDB 진도 테이블에 업데이트했습니다. 이를 통해 사용자가 강의를 빠르게 넘기거나 페이지를 떠나더라도 최소 학습 시간 기준으로 정확한 진도율을 계산하도록 구현했습니다. 또한, 프론트엔드에서는 진도 바를 실시간 반영하여 사용자에게 현재 진행 상황을 직관적으로 보여주도록 개선했습니다.</p>
+
+
+                    <p><strong>구현 방식</strong></p>
+                    <ul>
+                      <li>WordPress + learnpress LMS 플러그인 확장</li>
+                      <li>PHP로 강의 입장 시점과 종료 시점 기록</li>
+                      <li>MySQL/MariaDB에 진도 테이블 업데이트, AJAX로 프론트엔드 실시간 반영</li>
+                      <li>사용자가 강의를 건너뛰거나 빠르게 진행할 경우, 최소 학습 시간 기준으로 진도율 계산</li>
+                    </ul>
+
+                    <!-- 소제목 -->
+                    <h4>결제 시스템 캐싱 문제 해결</h4>
+
+                    <!-- 문제 상황과 해결 -->
+                    <p><strong>문제 상황 :</strong> 캐싱 처리로 인해 장바구니와 결제 페이지에서 세션이 불일치하거나, 사용자가 결제를 시도할 때 이전 장바구니 정보가 남아 결제가 실패하는 사례가 발생했습니다.</p>
+
+                    <p><strong>해결 방법 :</strong> PHP 백엔드에서 WooCommerce 장바구니와 결제 세션을 캐싱 예외 처리 대상으로 지정하고, 페이지 로드 시 세션과 캐시를 동기화하도록 구현했습니다. 또한 JavaScript를 사용하여 클라이언트 측에서도 장바구니 상태를 실시간 검증하고, 결제 버튼 클릭 시 서버로 즉시 최신 데이터를 전송하도록 개선했습니다. 이를 통해 캐시로 인한 결제 오류를 방지하고, 사용자 경험을 안정적으로 유지할 수 있었습니다.</p>
+
+                    <p><strong>구현 방식</strong></p>
+                    <ul>
+                      <li>WooCommerce + WordPress 환경에서 캐싱 예외 처리 적용 (결제/장바구니 페이지 제외)</li>
+                      <li>PHP로 세션과 캐시 동기화 로직 작성, 결제 시 최신 장바구니 데이터 강제 확인</li>
+                      <li>JavaScript + AJAX로 클라이언트 장바구니 상태 실시간 검증</li>
+                      <li>결제 실패 시 오류 로그 기록 및 사용자에게 안내 메시지 표시</li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- URL Shortener -->
+          <div class="card p-3 mb-3">
+            <h5>URL Shortener 원페이지 웹사이트</h5>
+            <ul>
+              <li>10,000건 이상의 URL 데이터 관리 및 단축 기능</li>
+              <li>URL 클릭수 추적으로 트래픽 분석</li>
+              <li>악성 사용자 필터링 및 차단 , IP 추적 구현</li>
+            </ul>
+            <a href="https://cutmoa.com/" target="_blank" class="btn btn-sm btn-custom mb-2">웹사이트 보러가기</a>
+
+            <!-- 상세보기 버튼 -->
+            <button type="button" class="btn btn-sm btn-custom" data-bs-toggle="modal" data-bs-target="#urlModal">
+              상세보기
+            </button>
+
+            <!-- URL Shortener Modal -->
+            <div class="modal fade" id="urlModal" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">URL Shortener 원페이지 웹사이트</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p><strong>사용 기술:</strong> PHP, CodeIgniter, JavaScript (ES6), jQuery, MySQL, Bootstrap, EC2</p>
+
+                    <!-- 소제목 -->
+                    <h4>대량 요청 처리 및 서버 안정성 확보</h4>
+                    <p><strong>문제 상황 :</strong> 짧은 URL 생성 요청이 단시간에 몰리거나 봇(자동화된 트래픽)이 대량으로 접근할 경우, 서버 부하가 급격히 증가하고 응답 지연이 발생했습니다.</p>
+                    <p><strong>해결 방법 :</strong> 서버 레벨에서 **Rate Limiting(요청 제한)**을 적용하여 단일 IP의 과도한 요청을 차단했습니다. 또한, Nginx 캐싱과 비동기 처리(Queue 기반)를 도입해 순간적인 대량 요청에도 안정적으로 서비스할 수 있도록 개선했습니다.</p>
+
+                    <!-- 소제목 -->
+                    <h4>악성 URL 및 보안 문제</h4>
+                    <p><strong>문제 상황 :</strong> 사용자들이 단축 서비스를 악용해 악성 사이트나 피싱 URL을 등록하는 문제가 발생했습니다.</p>
+                    <p><strong>해결 방법 :</strong> URL 등록 시 화이트리스트/블랙리스트 필터링을 적용하고, 외부 보안 API 연동으로 악성 도메인을 탐지하여 차단했습니다. 또한, IP 로그를 추적하여 동일 IP의 비정상적인 대량 등록을 제한했습니다.</p>
+
+                    <!-- 소제목 -->
+                    <h4>클릭 통계 및 사용자 분석</h4>
+                    <p><strong>문제 상황 :</strong> 단순 리다이렉션만 제공할 경우, 마케팅이나 사용자 분석에 활용하기 어려웠습니다.</p>
+                    <p><strong>해결 방법 :</strong> URL 접속 시 IP, 브라우저, 타임스탬프를 기록하고 이를 기반으로 사용자별 클릭 수와 트래픽 패턴을 시각화할 수 있도록 구현했습니다.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <!-- 넥슨 API 캐릭터검색 -->
+          <div class="card p-3 mb-3">
+            <h5>넥슨 API 캐릭터 검색 웹사이트</h5>
+            <ul>
+              <li>넥슨 API 연동 실시간 캐릭터 검색</li>
+              <li>총 100,000건 이상의 캐릭터 조회 기록 관리</li>
+              <li>PHP + CodeIgniter 기반, REST API + AJAX 활용</li>
+            </ul>
+            <a href="https://moamaple.com/" target="_blank" class="btn btn-sm btn-custom mb-2">웹사이트 보러가기</a>
+            <!-- 상세보기 버튼 -->
+            <button type="button" class="btn btn-sm btn-custom" data-bs-toggle="modal" data-bs-target="#nexonModal">
+              상세보기
+            </button>
+          </div>
+
+          <!-- 넥슨 API 캐릭터검색 Modal -->
+          <div class="modal fade" id="nexonModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">넥슨 API 캐릭터 검색 웹사이트</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <p><strong>사용 기술:</strong> PHP, CodeIgniter, MySQL, REST API, AJAX, Bootstrap, EC2</p>
+                  
+                  <!-- 소제목 -->
+                  <h4>API 응답 속도 개선</h4>
+                  <p><strong>문제 상황 :</strong> 넥슨 API의 응답 지연으로 검색 결과가 늦게 표시되면서 사용자 경험이 떨어졌습니다.</p>
+                  <p><strong>해결 방법 :</strong> AJAX 비동기 요청을 적용해 UI가 멈추지 않도록 했고, 서버 측에서는 최근 검색 결과를 임시 저장하여 반복 요청 시 즉시 응답할 수 있도록 구현했습니다.</p>
+                  
+                  <!-- 소제목 -->
+                  <h4>대량 데이터 관리</h4>
+                  <p><strong>문제 상황 :</strong> 100,000건 이상의 검색 기록이 누적되면서 데이터 조회 속도가 점점 느려졌습니다.</p>
+                  <p><strong>해결 방법 :</strong> MySQL 인덱스를 최적화하고 페이지네이션을 적용하여 대량 데이터도 빠르게 조회할 수 있도록 개선했습니다.</p>
+                  
+                  <!-- 소제목 -->
+                  <h4>보안 및 안정성 강화</h4>
+                  <p><strong>문제 상황 :</strong> 넥슨 API 키가 클라이언트에 직접 노출될 위험이 있었습니다.</p>
+                  <p><strong>해결 방법 :</strong> 서버에서 Proxy API를 구현하여 API 키를 안전하게 보호하고, 과도한 요청을 막기 위해 요청 제한 로직을 추가했습니다.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- 숨겨진 프로젝트 2개 -->
+        <div id="moreProjects" style="display:none;">
+          <!-- Node.js Electron GUI -->
+          <div class="card p-3 mb-3">
+            <h5>Node.js Electron GUI 프로그램</h5>
+            <ul>
+              <li>LMS 구매자 전용 GUI 프로그램 개발</li>
+              <li>Node.js + Electron 기반 크로스 플랫폼, GitHub 릴리즈 자동 업데이트 구현</li>
+              <li>구매자만 로그인 가능, 서버/클라이언트 검증 로직 구현</li>
+            </ul>
+            <button type="button" class="btn btn-sm btn-custom mb-2" data-bs-toggle="modal" data-bs-target="#electronModal">
+              보기
+            </button>
+            <!-- 상세보기 버튼 -->
+            <button type="button" class="btn btn-sm btn-custom" data-bs-toggle="modal" data-bs-target="#electronModal2">
+              상세보기
+            </button>
+          </div>
+
+          
+
+          <!-- Python PySide GUI -->
+          <div class="card p-3 mb-3">
+            <h5>Python PySide GUI 프로그램</h5>
+            <ul>
+              <li>Gemini API를 활용한 워드프레스, 티스토리, 네이버 자동화 포스팅 GUI 프로그램 개발</li>
+              <li>Python + PySide 기반 크로스 플랫폼 지원</li>
+              <li>공개 데이터 수집 및 자동화 크롤링 기능 구현 (BeautifulSoup, Selenium 활용, robots.txt 준수)</li>
+              <li>사용자 입력 효율화 및 CAPTCHA 대응 로직 개발</li>
+              <li>Firebase 로그인 검증 및 권한 관리 구현</li>
+            </ul>
+            <button type="button" class="btn btn-sm btn-custom mb-2" data-bs-toggle="modal" data-bs-target="#pysideModal1">
+              보기
+            </button>
+            <!-- 상세보기 버튼 -->
+            <button type="button" class="btn btn-sm btn-custom" data-bs-toggle="modal" data-bs-target="#pysideModal2">
+              상세보기
+            </button>
+          </div>
+        </div>
+
+        <!-- 더보기 버튼 -->
+        <div class="text-center">
+          <button id="showMoreBtn" class="btn btn-medium btn-outline-success">더보기</button>
+        </div>
+      </div>
+
+        
+      <!-- Electron Modal 1 -->
+      <div>
+        <div class="modal fade" id="electronModal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Node.js Electron GUI</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="images/일렉트론.png" alt="Electron GUI" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Node.js Electron GUI Modal 2 -->
+          <div class="modal fade" id="electronModal2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Node.js Electron GUI 프로그램</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <p><strong>사용 기술:</strong> Node.js, Electron, JavaScript(ES6), MySQL, Bootstrap, EC2</p>
+                  
+                  <h4>구매자 전용 접근 제어</h4>
+                  <p><strong>문제 상황 :</strong> 워드프레스 기본 솔트 처리 외에 LMS 플러그인에서 추가된 런프레스+워드프레스 솔트 때문에, 기존 워드프레스 로그인 검증만으로는 구매자 인증이 불가능했습니다.</p>
+                  <p><strong>해결 방법 :</strong> 서버 측에 전용 API를 구현하여 워드프레스 로그인 정보를 직접 검증하도록 변경했습니다. 또한, 클라이언트에 노출되면 안 되는 키 값들은 .env 환경 변수로 안전하게 관리하고, 서버에서만 불러와 사용하도록 처리하여 보안성을 강화했습니다.</p>
+
+                  <h4>코드 보호 및 난독화</h4>
+                  <p><strong>문제 상황 :</strong> 구매자가 Electron 앱을 언패킹하여 내부 JS 코드를 열람할 가능성이 있었습니다. 이 경우 민감한 로직이나 API 키가 노출될 위험이 있었습니다.</p>
+                  <p><strong>해결 방법 :</strong> 클라이언트 코드에 대해 난독화 및 ASAR 패키징을 적용하여 역공학을 방지했고, Secrets Management 전략을 도입하여 API 키는 .env 환경 변수로 분리 및 서버 측에서만 관리되도록 개선했습니다.</p>
+
+                  <!-- 소제목 -->
+                  <h4>자동 업데이트 기능</h4>
+                  <p><strong>문제 상황 :</strong> 배포 후에도 기능 개선이나 버그 수정이 필요했지만, 사용자가 직접 업데이트해야 하는 번거로움이 있었습니다.</p>
+                  <p><strong>해결 방법 :</strong> GitHub Release API와 Electron autoUpdater 모듈을 연동하여, 프로그램 실행 시 최신 버전이 자동으로 다운로드 및 적용되도록 구현했습니다.</p>
+
+                  <!-- 소제목 -->
+                  <h4>크로스 플랫폼 지원</h4>
+                  <p><strong>문제 상황 :</strong> Windows, macOS 등 다양한 환경에서 동일한 사용자 경험을 제공하기 어려웠습니다.</p>
+                  <p><strong>해결 방법 :</strong> Electron의 크로스 플랫폼 빌드 기능을 활용하여 OS별 빌드를 생성하고, 공통 UI/UX를 유지할 수 있도록 최적화했습니다.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- PySide Modal 1-->
+        <div class="modal fade" id="pysideModal1" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Python PySide GUI</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="images/pyside.jpg" alt="PySide GUI" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Python PySide GUI Modal -->
+        <div class="modal fade" id="pysideModal2" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Python PySide GUI 프로그램</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                <p><strong>사용 기술:</strong> Python, PySide, Selenium, BeautifulSoup, Firebase, Cross-platform, API Integration</p>
+
+                <!-- 소제목 -->
+                <h4>CAPTCHA 및 사용자 입력 대응</h4>
+                <p><strong>문제 상황 :</strong> 반복적인 포스팅 과정에서 CAPTCHA가 자주 나타나 자동화 작업을 방해하고, 다양한 입력 형식으로 인해 프로그램이 멈추거나 오류가 발생했습니다.</p>
+                <p><strong>해결 방법 :</strong> 2Captcha 서비스를 연동하여 CAPTCHA를 자동으로 해결하도록 구현했습니다. 또한, 실제 사용자가 작성한 것처럼 보이도록 Gemini API에서 수집한 데이터를 활용해 입력값을 동적으로 생성, 프로그램이 자연스럽게 포스팅되도록 개선했습니다.</p>
+
+                <!-- 소제목 -->
+                <h4>반복 포스팅 중 안전성 보장</h4>
+                <p><strong>문제 상황 :</strong> 자동화 반복 포스팅 시, 동일 데이터 중복 전송이나 로직 오류로 인해 게시물이 잘못 올라가는 문제가 발생할 수 있었습니다.</p>
+                <p><strong>해결 방법 :</strong> 프로그램 내 입력 검증 및 포스팅 로그 관리 시스템을 구축하여, 이전 데이터와 중복되는 항목을 자동으로 체크하고, 오류 발생 시 롤백할 수 있는 안전 장치를 구현했습니다.</p>
+
+                <!-- 소제목 -->
+                <h4>효율적인 자동 클릭 및 세션 관리</h4>
+                <p><strong>문제 상황 :</strong> Selenium으로 반복적으로 클릭하며 페이지에 접근하면, 처리 속도가 느려지고 불필요한 작업이 많았습니다. 또한, 로그인 세션이 만료되면 자동화가 중단될 위험이 있었습니다.</p>
+                <p><strong>해결 방법 :</strong> 필요한 URL과 입력 값을 미리 읽어와, 한 번에 해당 페이지로 바로 접근하도록 구현했습니다. 쿠키를 저장하여 로그인 상태를 유지하고, 세션 만료 시에는 자동으로 재로그인하도록 로직을 추가하여 안정성과 효율성을 높였습니다.</p>
+
+                <!-- 소제목 -->
+                <h4>서버 기반 HTTP 요청 자동화</h4>
+                <p><strong>문제 상황 :</strong> GUI를 계속 켜두고 Selenium으로 작업하면 리소스 소모가 크고 속도가 느렸습니다. 대량 포스팅 시 효율성이 떨어지는 문제가 있었습니다.</p>
+                <p><strong>해결 방법 :</strong> AWS EC2에서 Python과 JS를 활용하여 페이지를 직접 분석하고, Selenium 없이 HTTP 요청으로 자동 포스팅이 가능하도록 구현했습니다. 이를 통해 GUI를 켜두지 않아도 빠르고 안정적으로 포스팅을 수행할 수 있게 최적화했습니다.</p>
+
+                <!-- 소제목 -->
+                <h4>IP 회전 및 우회 크롤링</h4>
+                <p><strong>문제 상황 :</strong> 자동 포스팅과 데이터 수집 과정에서 동일 IP로 반복 요청 시 사이트 차단이 발생할 수 있었습니다.</p>
+                <p><strong>해결 방법 :</strong> Smartproxy 회전 프록시를 연동하여, 요청 시마다 IP를 자동으로 변경하도록 구현했습니다. 이를 통해 크롤링과 포스팅의 안정성을 확보하고, 대량 데이터를 지속적으로 처리할 수 있었습니다.</p>
+
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+      <!-- Experience -->
+      <div class="card p-3">
+        <h2>경력</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered align-middle">
+            <thead class="table-light">
+              <tr>
+                <th>회사</th>
+                <th>근무기간</th>
+                <th>직무</th>
+                <th>주요업무</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>뉴그린테크</td>
+                <td>2025.03 ~ 현재</td>
+                <td>생산팀</td>
+                <td>
+                  <ul class="mb-0">
+                    <li>생산된 제품의 검수 및 포장 업무 수행</li>                    
+                    <li>생산 보조 업무 및 현장 정리 정돈</li>
+                    <li>라벨 부착, 완제품 상자 포장 및 적재</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>메타게이지 코퍼레이션</td>
+                <td>2024.08 ~ 2024.10 (퇴사사유 : 경영악화)</td>
+                <td>백엔드개발팀</td>
+                <td>
+                  <ul class="mb-0">
+                    <li>Node.js (Express) 기반의 웹 서비스 개발 및 유지보수</li>
+                    <li>회사 내부 백오피스 시스템 기획 및 구축, 관리자 기능 개발</li>
+                    <li>고객관리 시스템(CRM) 유지보수 및 기능 개선</li>
+                    <li>프론트엔드와 연동된 API 개발 및 오류 모니터링</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>뉴그린테크</td>
+                <td>2023.09 ~ 2024.07</td>
+                <td>생산팀</td>
+                <td>
+                  <ul class="mb-0">
+                    <li>생산된 제품의 검수 및 포장 업무 수행</li>
+                    <li>생산 보조 업무 및 현장 정리 정돈</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <!-- Education -->
+      <div class="card p-3">
+        <h2>학력</h2>
+        <ul>
+          <li>성운대학교 스마트평생융합학과 졸업</li>
+        </ul>
+      </div>
+
+      <!--... -->
+
+
+
+    </div>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
